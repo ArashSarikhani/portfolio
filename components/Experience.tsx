@@ -70,10 +70,9 @@ const Experience: React.FC = () => {
                   {item.description.map((desc, idx) => (
                     <li
                       key={idx}
+                      dangerouslySetInnerHTML={{ __html: desc }}
                       className="relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-black font-normal"
-                    >
-                      {desc}
-                    </li>
+                    />
                   ))}
                 </ul>
               </div>

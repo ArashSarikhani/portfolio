@@ -35,12 +35,12 @@ function App() {
           */}
           <img
             src="/portraite.jpg"
-            alt="M.K. Qoliyan"
+            alt="Arash Sarikhani"
             className="w-full h-[50vh] lg:h-full object-cover object-center grayscale contrast-110 filter hover:grayscale-0 transition-all duration-700"
           />
           {/* Mobile Overlay Text (Visible only on small screens) */}
           <div className="lg:hidden absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent text-white z-20">
-            <h1 className="text-3xl font-bold">M.K. Qoliyan</h1>
+            <h1 className="text-3xl font-bold">Arash Sarikhani</h1>
             <p className="text-gray-200">Architect of Digital Experiences</p>
           </div>
         </div>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { generateResumePDF } from '../utils/generateResumePDF';
+import React, { useState } from "react";
+import { generateResumePDF } from "../utils/generateResumePDF";
 
 const Hero: React.FC = () => {
   const [isGenerating, setIsGenerating] = useState(false);
@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
       setIsGenerating(true);
       await generateResumePDF();
     } catch (error) {
-      console.error('Failed to generate resume:', error);
-      alert('Failed to generate resume. Please try again.');
+      console.error("Failed to generate resume:", error);
+      alert("Failed to generate resume. Please try again.");
     } finally {
       setIsGenerating(false);
     }
@@ -19,24 +19,21 @@ const Hero: React.FC = () => {
   return (
     <section id="hero" className="py-12 md:py-20 scroll-mt-28">
       <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight leading-tight">
-        M.K. Qoliyan
+        Arash Sarikhani
       </h1>
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-        Code meets innovation
+        Senior Frontend Engineer | Team Lead
       </h2>
 
       <div className="text-gray-600 text-lg leading-relaxed max-w-2xl mb-10 space-y-4">
         <p>
-          With two decades of hands-on experience, I transform complex business challenges into elegant
-          technical solutions. From architecting AI-powered platforms at Sharif University to leading
-          development teams across continents, I bring both strategic vision and tactical execution to
-          every project.
-        </p>
-        <p>
-          My expertise spans the full stack—React, Next.js, Node.js, and modern cloud architectures—but
-          what truly sets me apart is my ability to bridge the gap between cutting-edge technology and
-          real-world business value. Whether it's a lean MVP or an enterprise-scale platform, I deliver
-          solutions that perform, scale, and endure.
+          Senior Frontend Engineer with 5+ years of experience building and
+          scaling high-performance web applications. Expert in React,
+          TypeScript, and Next.js, with strong skills in frontend architecture,
+          design systems, and performance optimization. Proven leader mentoring
+          engineers, driving frontend guilds, and aligning technical execution
+          with business goals. Passionate about clean code, accessibility
+          (a11y), and delivering enterprise-grade SaaS at scale.
         </p>
       </div>
 
@@ -46,9 +43,12 @@ const Hero: React.FC = () => {
           disabled={isGenerating}
           className="bg-black text-white px-10 py-4 font-bold text-sm uppercase tracking-wider hover:bg-gray-800 transition-all shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isGenerating ? 'Generating...' : 'Download Resume'}
+          {isGenerating ? "Generating..." : "Download Resume"}
         </button>
-        <a href="#contact" className="border-2 border-black text-black px-10 py-4 font-bold text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-all text-center">
+        <a
+          href="#contact"
+          className="border-2 border-black text-black px-10 py-4 font-bold text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-all text-center"
+        >
           Contact Me
         </a>
       </div>

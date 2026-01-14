@@ -1,4 +1,4 @@
-# Portfolio Website - M.K. Qoliyan
+# Portfolio Website - Arash Sarikhani
 
 A modern, minimalist portfolio website for a full-stack developer built with React, TypeScript, and Vite.
 
@@ -26,17 +26,20 @@ A modern, minimalist portfolio website for a full-stack developer built with Rea
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/kazemsoft/nextjs-gholianir.git
 cd nextjs-gholianir
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run development server:
+
 ```bash
 npm run dev
 ```
@@ -48,7 +51,9 @@ npm run dev
 All portfolio content is managed through JSON files in the `/content` directory:
 
 ### Update Experiences
+
 Edit `content/experiences.json`:
+
 ```json
 {
   "id": "1",
@@ -65,13 +70,17 @@ Edit `content/experiences.json`:
 ```
 
 ### Update Skills
+
 Edit `content/skills.json`:
+
 ```json
 { "name": "React.js", "level": "Advanced" }
 ```
 
 ### Update Projects
+
 Edit `content/projects.json`:
+
 ```json
 {
   "id": "1",
@@ -82,6 +91,7 @@ Edit `content/projects.json`:
 ```
 
 After updating, run:
+
 ```bash
 npm run generate
 ```
@@ -114,7 +124,9 @@ npm run preview
 ## 🎨 Customization
 
 ### Change Colors
+
 Edit `index.html` Tailwind config:
+
 ```javascript
 colors: {
   primary: '#000000',
@@ -123,9 +135,11 @@ colors: {
 ```
 
 ### Update Profile Image
+
 Replace `/public/portraite.jpg` with your image
 
 ### Modify Theme
+
 Edit component files in `/components` directory
 
 ## 📧 Contact Form Setup
@@ -186,11 +200,7 @@ This is a personal portfolio template. Feel free to fork and customize for your 
 
 ## 📬 Contact
 
-- **Website**: [gholian.ir](https://gholian.ir)
-- **Email**: kgholian@gmail.com
-- **LinkedIn**: [linkedin.com/in/qoliyan](https://linkedin.com/in/qoliyan)
-- **Telegram**: [@MKQoliyan](https://t.me/MKQoliyan)
+- **Email**: arsa917@gmail.com
+- **LinkedIn**: [linkedin.com/in/ ](https://www.linkedin.com/in/arash-sarikhani-0b08b818a/)
 
 ---
-
-Built with ❤️ by M.K. Qoliyan

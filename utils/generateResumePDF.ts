@@ -1,18 +1,20 @@
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 export const generateResumePDF = async () => {
   // Create a temporary container for the resume
-  const resumeContainer = document.createElement('div');
-  resumeContainer.style.position = 'absolute';
-  resumeContainer.style.left = '-9999px';
-  resumeContainer.style.top = '0';
+  const resumeContainer = document.createElement("div");
+  resumeContainer.style.position = "absolute";
+  resumeContainer.style.left = "-9999px";
+  resumeContainer.style.top = "0";
   document.body.appendChild(resumeContainer);
 
   // Dynamically import React and ReactDOM
-  const React = await import('react');
-  const ReactDOM = await import('react-dom/client');
-  const { default: ResumeTemplate } = await import('../components/ResumeTemplate');
+  const React = await import("react");
+  const ReactDOM = await import("react-dom/client");
+  const { default: ResumeTemplate } = await import(
+    "../components/ResumeTemplate"
+  );
 
   // Render the resume template
   const root = ReactDOM.createRoot(resumeContainer);
@@ -23,10 +25,12 @@ export const generateResumePDF = async () => {
     // Wait for rendering to complete
     setTimeout(async () => {
       try {
-        const resumeElement = resumeContainer.querySelector('#resume-template') as HTMLElement;
+        const resumeElement = resumeContainer.querySelector(
+          "#resume-template"
+        ) as HTMLElement;
 
         if (!resumeElement) {
-          throw new Error('Resume template not found');
+          throw new Error("Resume template not found");
         }
 
         // Generate canvas from the resume HTML
@@ -34,7 +38,7 @@ export const generateResumePDF = async () => {
           scale: 2,
           useCORS: true,
           logging: false,
-          backgroundColor: '#ffffff',
+          backgroundColor: "#ffffff",
         });
 
         // Calculate PDF dimensions (A4 size)
@@ -43,12 +47,12 @@ export const generateResumePDF = async () => {
 
         // Create PDF (A4 Portrait)
         const pdf = new jsPDF({
-          orientation: 'portrait',
-          unit: 'mm',
-          format: 'a4',
+          orientation: "portrait",
+          unit: "mm",
+          format: "a4",
         });
 
-        const imgData = canvas.toDataURL('image/png');
+        const imgData = canvas.toDataURL("image/png");
 
         // Add image to PDF
         let position = 0;
@@ -59,7 +63,7 @@ export const generateResumePDF = async () => {
           let heightLeft = imgHeight;
 
           while (heightLeft > 0) {
-            pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+            pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
             heightLeft -= pageHeight;
             position -= pageHeight;
 
@@ -69,11 +73,11 @@ export const generateResumePDF = async () => {
           }
         } else {
           // Single page
-          pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+          pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
         }
 
         // Download the PDF
-        pdf.save('MK-Qoliyan-Resume.pdf');
+        pdf.save("arash-sarikhani-resume.pdf");
 
         // Cleanup
         root.unmount();
@@ -81,7 +85,7 @@ export const generateResumePDF = async () => {
 
         resolve();
       } catch (error) {
-        console.error('Error generating PDF:', error);
+        console.error("Error generating PDF:", error);
         root.unmount();
         document.body.removeChild(resumeContainer);
         reject(error);
