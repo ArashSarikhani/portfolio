@@ -131,11 +131,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
 
 export const EDUCATION_DATA: EducationItem[] = [
   {
-    degree: "Associate’s Degree in Accounting",
-    university: "Islamic Azad University, Garmsar",
-  },
-  {
-    degree: "Bachelor’s Degree in Software Technology Engineering",
-    university: "Islamic Azad University, Garmsar",
+    degree: "B.A. in Media & Communications",
+    university: "Allameh Tabataba’i University",
   },
 ];
