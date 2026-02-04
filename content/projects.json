@@ -14,7 +14,7 @@
   {
     "id": "3",
     "title": "Data Table",
-    "description": "Built a reusable React table with sorting, filtering, lazy loading, and RBAC",
+    "description": "Designed extensible headless table architecture using compound components and RBAC integration, reused across 5 internal products and reducing duplicated table logic by 100%.",
     "link": "http://github.com/ArashSarikhani/tailwindcss-react-data-table"
   }
 ]
