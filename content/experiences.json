@@ -7,7 +7,17 @@
     "date": "Jul 2021 - Present",
     "location": "Dubai, United Arab Emirates • Hybrid",
     "description": [
-      "Promoted to <strong>Frontend Team Lead</strong> within 2 years; mentored 6 engineers across 3 product lines."
+      "Promoted to <strong>Frontend Team Lead</strong> within 2 years; mentored 6 engineers across 3 product lines.",
+      "Introduced a company-wide <strong>Frontend Guild</strong> for knowledge sharing and best practices.",
+      "Architected a <strong>Formik + Yup</strong> form framework, cutting form development time by 60%.",
+      "Designed and shipped a <strong>100+ component UI library</strong> (compound pattern + Tailwind), improving developer onboarding speed and UI consistency across apps.",
+      "Optimized React performance, reducing re-renders by <strong>98%</strong> under enterprise load.",
+      "Built <strong>a role-based access control (RBAC) system</strong> powering 500+ components.",
+      "Delivered <strong>real-time dashboards</strong> (WebSockets + GraphQL) enabling live device monitoring.",
+      "Increased test coverage by 40% with Jest, RTL, and Cypress; fostered a TDD culture.",
+      "Implemented <strong>SEO-friendly Next.js SSR/SSG</strong> (LCP < 1.5s, CLS < 0.1).",
+      "Integrated multilingual support with <strong>react-i18next</strong>, scaling localization across apps.",
+      "Collaborated cross-functionally with product, design, and backend to align business goals with user needs."
     ],
     "skills": [
       "Next.js",
@@ -24,9 +34,70 @@
       "React Hook Form",
       "React Query",
       "React Router",
-      "React Testing Library"
+      "React Testing Library",
+      "Formik",
+      "Yup",
+      "GraphQL",
+      "Jest",
+      "RTL",
+      "Cypress",
+      "SEO",
+      "i18next",
+      "RBAC",
+      "SSR",
+      "SSG",
+      "LCP",
+      "CLS",
+      "Performance Optimization",
+      "Web Accessibility (WCAG)",
+      "Responsive Design",
+      "REST APIs"
     ],
     "image": "sternx.jpg",
     "order": 8
+  },
+  {
+    "id": "7",
+    "role": "Frontend Developer",
+    "company": "KAVANO",
+    "type": "freelance",
+    "date": "Mar 2021 - Apr 2021",
+    "location": "Tehran, Iran • Remote",
+    "description": [
+      "Developed React + Redux admin panel with Sass, achieving a <strong>95/100 Lighthouse score</strong>.",
+      "Reduced page load to <strong>1.5s</strong> and bundle size by <strong>45%</strong> through optimization."
+    ],
+    "skills": [
+      "React.js",
+      "Redux",
+      "Sass",
+      "Lighthouse",
+      "Optimization",
+      "Performance Optimization",
+      "Web Accessibility (WCAG)",
+      "Responsive Design",
+      "REST APIs"
+    ],
+    "image": "kavano.jpeg",
+    "order": 7
+  },
+  {
+    "id": "6",
+    "role": "Frontend Developer",
+    "company": "ACECR",
+    "type": "Part-time",
+    "date": "Dec 2020 - Feb 2021",
+    "location": "Tehran, Iran • On-site",
+    "description": [
+      "Delivered a Next.js ticketing portal within 6 weeks, ensuring timely release.",
+      "Transitioned from design to development mid-project without delivery delays."
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "JavaScript"
+    ],
+    "image": "acecr.jpeg",
+    "order": 6
   }
 ]

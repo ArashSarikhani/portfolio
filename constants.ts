@@ -131,6 +131,18 @@ export const PROJECTS_DATA: ProjectItem[] = [
 
 export const EDUCATION_DATA: EducationItem[] = [
   {
+    degree: "React Development Course ",
+    university: "Tehran Institute of Technology",
+  },
+  {
+    degree: "JavaScript Development Course",
+    university: "Tehran Institute of Technology",
+  },
+  {
+    degree: "HTML, CSS & Bootstrap",
+    university: "Tehran Institute of Technology",
+  },
+  {
     degree: "B.A. in Media & Communications",
     university: "Allameh Tabataba’i University",
   },

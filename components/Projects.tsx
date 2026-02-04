@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
       <h3 className="text-3xl font-black mb-10">My Projects</h3>
 
       <div className="grid grid-cols-1 gap-6">
-        {/* {PROJECTS_DATA.map((project) => (
+        {PROJECTS_DATA.map((project) => (
           <a
             key={project.id}
             href={project.link || '#'}
@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
               {project.description}
             </p>
           </a>
-        ))} */}
+        ))}
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ const Education: React.FC = () => {
       id="education"
       className="py-16 border-t border-gray-100 scroll-mt-28"
     >
-      <h3 className="text-3xl font-black mb-10">Education</h3>
+      <h3 className="text-3xl font-black mb-10">Education & Certifications</h3>
 
       <div className="space-y-8">
         {EDUCATION_DATA.map((edu, index) => (
