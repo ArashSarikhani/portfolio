@@ -4,8 +4,8 @@
     "role": "Frontend Team Lead",
     "company": "SternX",
     "type": "Full-time",
-    "date": "Jul 2021 - Present",
-    "location": "Dubai, United Arab Emirates • Hybrid",
+    "date": "Sep 2021 - Present",
+    "location": "Muscat, Oman • Hybrid",
     "description": [
       "Promoted to <strong>Frontend Team Lead</strong> within 2 years; mentored 6 engineers across 3 product lines.",
       "Introduced a company-wide <strong>Frontend Guild</strong> for knowledge sharing and best practices.",
@@ -61,11 +61,13 @@
     "role": "Frontend Developer",
     "company": "KAVANO",
     "type": "freelance",
-    "date": "Mar 2021 - Apr 2021",
-    "location": "Tehran, Iran • Remote",
+    "date": "Mar 2021 - Aug 2021",
+    "location": "Tehran, Iran • On-site",
     "description": [
-      "Developed React + Redux admin panel with Sass, achieving a <strong>95/100 Lighthouse score</strong>.",
-      "Reduced page load to <strong>1.5s</strong> and bundle size by <strong>45%</strong> through optimization."
+      "Rebuilt the admin panel from scratch (React, Redux, SASS),  scored 95/100 on Lighthouse across all four categories",
+      "Reduced JS bundle by 45% via code splitting, tree shaking, and dynamic imports; load time dropped from 4.2s to under 1.5s.",
+      "Replaced prop-drilling with structured Redux,  QA UI bug rate dropped ~70%.",
+      "Added ESLint, Prettier, and component documentation; the in-house team owned the codebase post-handoff without issues."
     ],
     "skills": [
       "React.js",
@@ -89,14 +91,12 @@
     "date": "Dec 2020 - Feb 2021",
     "location": "Tehran, Iran • On-site",
     "description": [
-      "Delivered a Next.js ticketing portal within 6 weeks, ensuring timely release.",
-      "Transitioned from design to development mid-project without delivery delays."
+      "Ramped to full output within a week,  the project hit its original 6-week deadline despite a mid-flight handoff.",
+      "Converted event listing pages to Next.js SSR,  Googlebot crawl coverage improved, TTFB dropped ~40% vs. prior SPA.",
+      "Delivered Figma-to-production components directly,  closed the design-to-code gap, driving the initial delays.",
+      "Integrated third-party payment gateway with session-based checkout; handled 10+ live event launches without incident."
     ],
-    "skills": [
-      "React.js",
-      "Next.js",
-      "JavaScript"
-    ],
+    "skills": ["React.js", "Next.js", "JavaScript"],
     "image": "acecr.jpeg",
     "order": 6
   }

@@ -27,13 +27,15 @@ const Hero: React.FC = () => {
 
       <div className="text-gray-600 text-lg leading-relaxed max-w-2xl mb-10 space-y-4">
         <p>
-          Senior Frontend Engineer with 5+ years of experience building and
-          scaling high-performance web applications. Expert in React,
-          TypeScript, and Next.js, with strong skills in frontend architecture,
-          design systems, and performance optimization. Proven leader mentoring
-          engineers, driving frontend guilds, and aligning technical execution
-          with business goals. Passionate about clean code, accessibility
-          (a11y), and delivering enterprise-grade SaaS at scale.
+          Senior Frontend Engineer and Tech Lead with 5+ years shipping
+          enterprise SaaS. Architects scalable frontend systems, leads
+          cross-functional engineering teams, and contributes full-stack,
+          writing NestJS services and Go handlers in the same production
+          codebase daily. A background in senior visual design sharpens every
+          layer of the work from component API decisions to pixel-precise Figma
+          handoffs. Integrating OpenAI and Claude APIs into live product
+          interfaces. High-ownership, end-to-end: from API contract to deployed
+          UI.
         </p>
       </div>
 
